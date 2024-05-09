@@ -1,0 +1,18 @@
+.primary-btn {
+    padding: 0.25em 0.75em;
+    border: 1px solid var(--primary-color);
+    background-color: var(--background-color);
+    border-radius: 4px;
+    box-shadow: 4px 4px 0 var(--accent-color);
+    font-family: inherit;
+    color: var(--primary-color);
+    font-size: var(--fs-400);
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover, &:focus {
+        background-color: var(--secondary-color);
+        color: var(--background-color);
+        box-shadow: 6px 6px 0 var(--accent-color);
+    }
+}
