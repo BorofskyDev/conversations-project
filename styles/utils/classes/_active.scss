@@ -1,0 +1,13 @@
+.active {
+    color: var(--primary-color);
+    border-color: var(--primary-color);
+    box-shadow: 2px 2px 0 var(--accent-color);
+    
+    &:hover, &:focus {
+        color: var(--primary-color);
+        border-color: var(--primary-color);
+        box-shadow: 2px 2px 0 var(--accent-color);
+        background-color: var(--background-color);
+        cursor: default;
+    }
+}
