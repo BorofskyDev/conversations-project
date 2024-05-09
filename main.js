@@ -24,6 +24,11 @@ document.addEventListener('DOMContentLoaded', () => {
     setTheme('dark')
   })
 
-  const currentTheme = document.documentElement.getAttribute('data-theme') || 'light'
-  setTheme(currentTheme)
+   const prefersDarkScheme = window.matchMedia(
+     '(prefers-color-scheme: dark)'
+   ).matches
+   const currentTheme =
+     document.documentElement.getAttribute('data-theme') ||
+     (prefersDarkScheme ? 'dark' : 'light')
+   setTheme(currentTheme)
 })
